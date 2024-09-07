@@ -24,8 +24,8 @@ watermarkBtn.addEventListener('click', () => {
 
 		watermarkedPhoto.src = watermarkedPhotoData;
 
-		downloadLink.href = watermarkedPhotoData;
-
+		downloadLink.href = canvas.toDataURL('image/jpeg');
+		
 		downloadLink.style.display = 'block';
 
 	};
