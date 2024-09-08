@@ -11,7 +11,7 @@ watermarkBtn.addEventListener('click', () => {
 		const stamp = generateCryptographicStamp();
 		const watermarkedPhotoData = addWatermark(photoData, stamp);
 		watermarkedPhoto.src = watermarkedPhotoData;
-		downloadBtn.href = watermarkedPhotoData;
+		downloadBtn.href = canvas.toDataURL('image/jpeg');
 		downloadBtn.style.display = 'block';
 	};
 	reader.readAsDataURL(photo);
