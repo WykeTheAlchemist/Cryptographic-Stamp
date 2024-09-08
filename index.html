@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-	<title>Cryptographic-Stamp Generator</title>
-
+	<title>Cryptographic-Stamp App</title>
 	<link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-	<h1>Cryptographic-Stamp Generator</h1>
-
-	<input type="file" id="photo-upload" accept="image/*">
-
-	<button id="watermark-btn">Stamp Photo</button>
-
-	<img id="watermarked-photo" src="">
-
-	<a id="download-link" href="" download="watermarked-photo.jpg">Download Stamped Photo</a>
-
+	<div class="container">
+		<h1>Cryptographic-Stamp App</h1>
+		<input type="file" id="photo-upload" accept="image/*">
+		<button id="watermark-btn" class="btn">Stamp Photo</button>
+		<div class="photo-container">
+			<img id="watermarked-photo" src="">
+			<button id="download-btn" class="btn">Download Stamped Photo</button>
+		</div>
+	</div>
 	<script src="script.js"></script>
-
 </body>
-
 </html>
 
